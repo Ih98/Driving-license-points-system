@@ -6,15 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- fontawsome -->
     <link rel="stylesheet" href="./css/all.min.css">
 
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- title -->
     <title> إتصل بنا </title>
@@ -26,26 +24,16 @@
     <div class="continer">
 
         <!--header page -->
-
-        <header>
-            <h1>الجمهورية الجزائرية الديموقراطية الشعبية</h1>
-            <div class="nav_bar">
-                <ul>
-                    <li><a href="home.html"> الصفحة الرئيسية </a></li>
-                    <li><a href="moukhalafat.html"> المخالفات </a></li>
-                    <li><a href="rokhsaty.html"> رخصتي </a></li>
-                    <li><a href="contact.html"> الإتصال </a></li>
-                </ul>
-            </div>
-        </header>
-
+        <?php
+        include_once './header.php';
+        ?>
         <!-- end header page -->
 
         <!--     محتوى الصفحة   -->
 
         <main>
             <div class="part-info">
-                <img src="./assets/ppppppppp.png" alt="">
+                <img src="../assets/ppppppppp.png" alt="">
                 <div class="info">
                     <form action="">
                         <div>

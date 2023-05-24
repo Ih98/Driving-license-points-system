@@ -1,3 +1,28 @@
+<?php
+// connect to dataBase
+
+include_once "./inc/connect.php";
+
+//  end conect to dataBase
+
+
+
+
+// PHP code 
+
+if (isset($_POST['submit'])) {
+    header('loaction:./pages/home.php');
+}
+
+// end PHP code
+
+
+
+
+
+
+?>
+<!--  Front-end Part  -->
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 
@@ -12,9 +37,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
 
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- title -->
     <title> إتصل بنا </title>
@@ -27,7 +50,7 @@
         <div class="part_one">
             <h1> تسجيل الدخول </h1>
             <h2> للإطلاع على معلوماتك يرجى تسجيل الدخول </h2>
-            <form action="home.html">
+            <form action="./pages/home.php">
                 <input type="text" placeholder="البريد الإلكتروني">
                 <input type="password" placeholder="الرقم السري">
 
@@ -46,7 +69,11 @@
     </main>
 
 
+    <!--  js files -->
+
     <script src="./js/script.js"></script>
+
+    <!--  end js files -->
 
 </body>
 

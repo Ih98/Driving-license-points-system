@@ -1,3 +1,34 @@
+<?php
+// connect to dataBase
+
+include_once "./inc/connect.php";
+
+//  end conect to dataBase
+
+
+
+
+// PHP code 
+
+if (isset($_POST['submit'])) {
+
+    $userName = filter_input(INPUT_POST, 'userName');
+    $dateOfBirth  = filter_input(INPUT_POST, 'dateOfBirth');
+    $email = filter_input(INPUT_POST, 'email');
+    $password = filter_input(INPUT_POST, 'password');
+    $password2 = filter_input(INPUT_POST, 'password2');
+
+    $dataBase = $connection->prepare("INSERT INTO user(userName ,dateOfBirth ,email ,password ,password2) VALUES ('$userName','$dateOfBirth', '$email', '$password', '$password2')");
+    $dataBase->execute();
+
+    header('location:./pages/home.php');
+}
+
+// end PHP code
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 
@@ -12,18 +43,16 @@
     <link rel="stylesheet" href="./css/all.min.css">
 
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- title -->
-    <title> إتصل بنا </title>
+    <title> إنشاء حساب جديد </title>
 
 </head>
 
 <body>
     <main class="new_user">
-        <form action="home.html">
+        <form method="POST">
             <h1> إنشاء حساب جديد </h1>
             <div class="inp">
                 <label for=""> الإسم و اللقب </label>
@@ -46,14 +75,17 @@
                 <input type="password" name="password2" id="password2">
             </div>
 
-            <input type="submit" value="تسجيل" class="btn">
+            <input type="submit" value="تسجيل" class="btn" name="submit">
         </form>
     </main>
 
 
+    <!--  js files -->
 
+    <script src="../js/script.js"></script>
 
-    <script src="./js/script.js"></script>
+    <!--  end js files -->
+
 </body>
 
 </html>
