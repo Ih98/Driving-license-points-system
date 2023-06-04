@@ -25,7 +25,7 @@
         <!--header page -->
 
         <?php
-        include_once './header.php';
+        include_once '../inc/componnent/header.php';
         ?>
 
         <!-- end header page -->
@@ -37,30 +37,30 @@
             <div class="header">
                 <div>
                     <h1> ابقى على تواصل </h1>
-                    <h4> هل ترغب في الإتصال بنا ؟ نود أن نوضح لك كيف يمكنك الوصول إلينا... </h4>
+                    <h4> نود أن نوضح لك كيف يمكنك الوصول إلينا... </h4>
                 </div>
             </div>
             <div class="content">
                 <div class="cont-box">
                     <div class="box">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-fax"></i>
                         <h1>FAX</h1>
-                        <h3>0000000</h3>
+                        <h4>0000000</h4>
                     </div>
                     <div class="box">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-envelope"></i>
                         <h1> البريد الإلكتروني </h1>
-                        <h3>oooooo</h3>
+                        <h3> sfdahas </h3>
                     </div>
                     <div class="box">
                         <i class="fa-solid fa-location-dot"></i>
                         <h1> مكتب الولاية </h1>
-                        <h3>oooooo</h3>
+                        <h3> sdhsdhsd </h3>
                     </div>
                     <div class="box">
                         <i class="fa-solid fa-phone"></i>
                         <h1> رقم الهاتف </h1>
-                        <h3>oooooo</h3>
+                        <h3> e009090 </h3>
                     </div>
                 </div>
                 <form action="">

@@ -1,7 +1,7 @@
 <?php
 // connect to dataBase
 
-include_once "./inc/connect.php";
+include_once "./inc/DB/connect.php";
 
 //  end conect to dataBase
 
