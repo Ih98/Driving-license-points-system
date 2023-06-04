@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
                 <input type="password" placeholder="الرقم السري">
 
                 <div>
-                    <h3> إنشاء حساب جديد </h3>
+                    <h3><a href="./pages/newUser.php"> إنشاء حساب جديد </a></h3>
                     <input type="submit" value="تسجيل الدخول" class="btn">
                 </div>
 
