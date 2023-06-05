@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     $dataBase = $connection->prepare("INSERT INTO user(userName ,dateOfBirth ,email ,password ,password2) VALUES ('$userName','$dateOfBirth', '$email', '$password', '$password2')");
     $dataBase->execute();
 
-    header('location:./pages/home.php');
+    header('location:./home.php');
 }
 
 // end PHP code
