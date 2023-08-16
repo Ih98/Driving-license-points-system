@@ -6,25 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- fontawsome -->
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- title -->
-    <title> المخالفات و الجنح </title>
+    <title> رخصتي </title>
 
 </head>
 
 <body>
+
     <div class="continer">
+
         <!--header page -->
 
         <?php
-        include_once '../inc/componnent/header.php';
+        include_once './inc/componnent/header.php';
         ?>
 
         <!-- end header page -->

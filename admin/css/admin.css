@@ -1,0 +1,206 @@
+/* start global val */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #eee;
+    font-family: 'Cairo', sans-serif;
+}
+
+.continer {
+    width: 70%;
+    height: 200vh;
+    margin: auto;
+    box-shadow: 0px 0px 20px 3px #7a7a7a;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    transition: 0.3s;
+    background-color: green;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:disabled {
+    background-color: #f8f8f8;
+    border-color: #ccc;
+    color: #999;
+}
+
+/* end global val */
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*  start header page  */
+header {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background-color: green;
+}
+
+header .content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+header ul {
+    width: 80%;
+    padding: 10px 0px;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+header ul a li {
+    color: white;
+    list-style: none;
+    margin-top: 20px;
+}
+
+/*  end header page  */
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*start irregul page*/
+/*start irregul page*/
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*  start add irregul page  */
+#addIre {
+    width: 80%;
+    margin-right: 20%;
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+
+#addIre .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#addIre form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#addIre form .btn {
+    margin-top: 20px;
+}
+
+/*  end add irregul page*/
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*start irregul page*/
+#irregul {
+    width: 80%;
+    margin-right: 20%;
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+
+#irregul .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#irregul table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+#irregul tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#irregul tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#irregul td,
+#irregul th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#irregul tr:hover {
+    background-color: #ffc;
+}
+
+#irregul th {
+    background-color: #555;
+    color: white;
+}
+
+/*start irregul page*/
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/

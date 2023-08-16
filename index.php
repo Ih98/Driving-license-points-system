@@ -1,28 +1,3 @@
-<?php
-// connect to dataBase
-
-include_once "./inc/DB/connect.php";
-
-//  end conect to dataBase
-
-
-
-
-// PHP code 
-
-if (isset($_POST['submit'])) {
-    header('loaction:./pages/home.php');
-}
-
-// end PHP code
-
-
-
-
-
-
-?>
-<!--  Front-end Part  -->
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 
@@ -31,7 +6,7 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <!-- fontawsome -->
     <link rel="stylesheet" href="./css/all.min.css">
@@ -40,41 +15,75 @@ if (isset($_POST['submit'])) {
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Public+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <!-- title -->
-    <title> إتصل بنا </title>
+    <title> الصفحة الرئيسية </title>
 
 </head>
 
 <body>
 
-    <main class="login">
-        <div class="part_one">
-            <h1> تسجيل الدخول </h1>
-            <h2> للإطلاع على معلوماتك يرجى تسجيل الدخول </h2>
-            <form action="./pages/home.php">
-                <input type="text" placeholder="البريد الإلكتروني">
-                <input type="password" placeholder="الرقم السري">
+    <div class="continer">
 
-                <div>
-                    <h3><a href="./pages/newUser.php"> إنشاء حساب جديد </a></h3>
-                    <input type="submit" value="تسجيل الدخول" class="btn">
+        <!--header page -->
+        <?php
+        include_once './inc/componnent/header.php';
+        ?>
+        <!-- end header page -->
+
+        <!--     محتوى الصفحة   -->
+
+        <main>
+            <div class="part-info">
+                <img src="./assets/ppppppppp.png" alt="">
+                <div class="info">
+                    <form action="">
+                        <div>
+                            <label for=""> أكتب رقم NIN الخاص بك</label>
+                            <input type="text">
+                        </div>
+                        <input type="submit" value="ارسال" class="btn">
+                    </form>
                 </div>
+            </div>
 
-            </form>
-        </div>
-        <div class="part_tow">
+            <div class="scnd-part">
+                <div>
+                    <h1> إجممالي النقاط </h1>
+                    <div></div>
+                </div>
+                <div>
+                    <h1></h1>
+                    <div></div>
+                </div>
+                <div>
+                    <h1></h1>
+                    <div></div>
+                </div>
+                <div>
+                    <h1></h1>
+                    <div></div>
+                </div>
+            </div>
+        </main>
 
-            <img src="./assets/user back.png" alt="">
-
-        </div>
-    </main>
 
 
-    <!--  js files -->
+
+
+    </div>
+
+
+    <!--   إنتهاء محتوى الصفحة  -->
+
+
+
+
+
+
+
+
+    </div>
 
     <script src="./js/script.js"></script>
-
-    <!--  end js files -->
-
 </body>
 
 </html>

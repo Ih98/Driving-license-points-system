@@ -30,7 +30,33 @@ body {
     cursor: pointer;
 }
 
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:disabled {
+    background-color: #f8f8f8;
+    border-color: #ccc;
+    color: #999;
+}
+
 /* end global val */
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
 
 
 /*  إنشاء صفحة تسجيل مستخدم جديد  */
